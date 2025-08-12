@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* navbar */
+header {
+  background-color: #173952;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.25rem;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+header img {
+  height: 10rem;
+  width: auto;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* fotter */
+footer {
+  background-color: #173952;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
+.footer-links img {
+  height: 20px;
+}
+
+.footer-content {
+  display: flex;
+  width: 64%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* button */
+.button {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: #173952;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  border: 2px solid #173952;
+}
+
+/* btn float */
+.flotante {
+  display: scroll;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.boton-wsp {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0px;
+    padding-right: 2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+
+    display: block;
+    position: absolute;
+    top: 6.25rem;
+    right: 0;
+    left: 0;
+    background-color: #173952;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 300ms ease;
+    z-index: 50;
+  }
+
+
+  nav a {
+    display: block;
+    padding: 1rem 1.25rem;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 1rem;
+  }
+
+
+  nav.open {
+    max-height: 400px;
+  }
+
+  header i {
+    font-size: 1.25rem;
+  }
+
+  .boton-wsp {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}

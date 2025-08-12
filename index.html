@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="zadum, estetica, facial, belleza, cuidado personal"
+    />
+    <meta name="author" content="Majo & Arianna" />
+    <title>Zadum</title>
+    <!-- PRELOAD de CSS  -->
+    <link rel="preload" href="./css/normalize.css" as="style" />
+    <link rel="preload" href="./css/common.css" as="style" />
+    <link rel="preload" href="./css/home.css" as="style" />
+    <!-- Carga real del CSS -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img src="./img/LogoZadum.png" alt="Logo Zadum Header"
+      /></a>
+      <nav id="main-nav">
+        <a href="./index.html">Inicio</a>
+        <a href="./views/services.html">Servicios</a>
+        <a href="./views/contacto.html">Contacto</a>
+      </nav>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <section class="hero">
+      <div style="padding-top: 40px; width: 30%">
+        <h1>Hydrating Skincare Products</h1>
+        <a class="button" href="#">Contacto</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="./img/Alexa.png" alt="Avatar" />
+      <div class="about-text">
+        <h2>Sobre mí</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
+          metus placerat, tempor magna in, scelerisque velit.
+        </p>
+        <p>
+          Mi misión es ayudarte a cuidar tu piel y bienestar con tratamientos
+          personalizados y atención profesional.
+        </p>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>Nuestros Servicios</h2>
+      <div class="wrapper">
+        <div class="card">
+          <img
+            src="./img/Masajes Terapéuticos y Relajantes.png"
+            alt="Cuidado Facial"
+          />
+          <div class="info">
+            <h1>Masajes Terapéuticos y Relajantes</h1>
+           
+          </div>
+        </div>
+
+        <!-- Puedes duplicar o repetir estas cards si necesitas más -->
+        <div class="card">
+          <img
+            src="./img/Tratamientos Corporales Especiales.jpg"
+            alt="Cuidado Facial"
+          />
+          <div class="info">
+            <h1>Tratamientos Corporales Especiales</h1>
+        
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="./img/Tratamientos Faciales Rejuvenecedores.jpg"
+            alt="Cuidado Facial"
+          />
+          <div class="info">
+            <h1>Tratamientos Faciales Rejuvenecedores</h1>
+           
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="./img/cosmetologia-medico-y-paciente.jpg"
+            alt="Cuidado Facial"
+          />
+          <div class="info">
+            <h1>Beneficios de Nuestros Tratamientos</h1>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Botón de WhatsApp flotante-->
+    <a class="flotante" href="https://wa.me/+50671581462">
+      <img class="boton-wsp" src="./img/WhatsAppLogo.png" border="0" />
+    </a>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./img/LogoZadum.png" alt="Cuidado Facial" />
+        </div>
+        <div>
+          <div class="footer-links">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+          <p>© 2025 Zadum. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
