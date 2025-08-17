@@ -49,6 +49,16 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: #edf2f777;
+
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* fotter */
 footer {
   background-color: #173952;
