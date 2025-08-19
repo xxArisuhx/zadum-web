@@ -18,10 +18,11 @@
 }
 
 .slogan-container {
- position: absolute;
+  position: absolute;
+  text-align: center;
   width: 30%;
-  left: 20%;
-  top: 20%;
+  left: 15%;
+  top: 30%;
 }
 
 .about {
@@ -40,7 +41,7 @@
 }
 
 .about-text {
-  max-width: 500px;
+  width: 50%;
 }
 
 .about-text h2 {
@@ -73,9 +74,11 @@
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
+
 .services a {
   text-decoration: none;
 }
+
 .card:hover {
   transform: translateY(20px);
 }
@@ -134,18 +137,26 @@
     height: auto;
   }
 
+  .about-text {
+    width: 100%;
+  }
+  .about-text h2{
+    text-align: center;
+  }
+
   .hero {
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-.slogan-container {
- position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  
-}
+
+  .slogan-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+  }
 
   .card {
     transform: translateY(20px);

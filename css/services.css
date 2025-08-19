@@ -18,6 +18,21 @@ section h1 {
   flex-wrap: wrap;
 }
 
+.titulo {
+  cursor: pointer;
+}
+
+.descripcion {
+  display: none;
+  margin: 0.3rem 0 0 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+li.active .descripcion {
+  display: block;
+}
+
 .card-servicio img {
   width: 400px;
   height: 400px;
@@ -51,6 +66,7 @@ section h1 {
   color: #005a68;
   line-height: 1.6;
 }
+
 .card-servicio.reverse {
   flex-direction: row-reverse;
 }
@@ -62,9 +78,11 @@ section h1 {
 .img-left {
   border-radius: 0 40px 40px 0;
 }
+
 .contenido-left {
   margin-left: 40px;
 }
+
 .servicio-p {
   width: 60%;
   margin: 0 auto;
@@ -74,6 +92,13 @@ section h1 {
   section {
     padding: 40px;
   }
+  h1{
+    font-size: 20px;
+  }
+  .card-servicio h2 {
+  font-size: 18px;
+
+}
   .card-servicio {
     flex-direction: column;
   }
@@ -98,6 +123,12 @@ section h1 {
 
   .card-servicio .contenido {
     padding: 20px;
+  }
+
+  .descripcion {
+    
+    margin: 0.3rem 0 0 0.3rem;
+   
   }
 
   .servicio-p {
