@@ -80,8 +80,17 @@ footer {
   justify-content: center;
   gap: 20px;
   padding-bottom: 50px;
-  font-size: 20px;
+
+ 
 }
+.footer-links a{
+color: white;
+}
+
+.footer-links i{
+font-size: 25px;
+}
+
 
 .footer-links img {
   height: 20px;
