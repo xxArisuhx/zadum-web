@@ -55,6 +55,7 @@
 .contact-card p {
   margin: 0;
   color: #555;
+  text-decoration: none;
 }
 .map-container {
   padding-top: 20px;
