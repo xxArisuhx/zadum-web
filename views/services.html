@@ -3,25 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Servicios - Zadum Estética y Bienestar</title>
+    <meta
+      name="description"
+      content="Conoce los servicios de Zadum: masajes terapéuticos, tratamientos corporales especiales y faciales rejuvenecedores. Cuidado personalizado para tu belleza y bienestar."
+    />
     <meta
       name="keywords"
-      content="zadum, estetica, facial, belleza, cuidado personal, servicios, desplegable, visual"
+      content="estética, servicios de belleza, tratamientos faciales, masajes relajantes, tratamientos corporales, rejuvenecimiento, bienestar"
     />
     <meta name="author" content="Majo & Arianna" />
-    <title>Servicios</title>
-    <!-- PRELOAD de CSS  -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/LogoZadum.png" type="image/png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Servicios - Zadum Estética y Bienestar" />
+    <meta
+      property="og:description"
+      content="Descubre los tratamientos faciales, corporales y masajes de Zadum. Bienestar y estética en un solo lugar."
+    />
+    <meta property="og:image" content="../img/LogoZadum.png" />
+    <meta property="og:url" content="https://www.zadum.com/views/services.html" />
+    <meta property="og:type" content="website" />
+
+
+    <!-- PRELOAD de CSS -->
     <link rel="preload" href="../css/normalize.css" as="style" />
     <link rel="preload" href="../css/common.css" as="style" />
     <link rel="preload" href="../css/services.css" as="style" />
-    <!-- Carga real del CSS -->
+
+    <!-- CSS real -->
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/services.css" />
+
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <!-- FontAwesome -->
     <link
       rel="stylesheet"
@@ -31,12 +55,12 @@
 
   <body>
     <header>
-      <a href="../index.html">
-        <img src="../img/LogoZadum.png" alt="Logo Zadum Header"
-      /></a>
+      <a href="../index.html" aria-label="Ir al inicio Zadum">
+        <img src="../img/LogoZadum.png" alt="Logo de Zadum Estética" />
+      </a>
       <nav id="main-nav">
         <a href="../index.html">Inicio</a>
-        <a href="./services.html">Servicios</a>
+        <a href="./services.html" aria-current="page">Servicios</a>
         <a href="./contacto.html">Contacto</a>
       </nav>
       <button
@@ -49,44 +73,43 @@
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
     </header>
+
     <section>
       <h1>Nuestros Servicios</h1>
       <p class="servicio-p">
         Descubre una amplia gama de tratamientos diseñados para realzar tu
         belleza y bienestar. Desde cuidado facial hasta tratamientos corporales,
         nuestro equipo de expertos está aquí para ofrecerte una experiencia
-        personalizada y de alta calidad.
-        Toca el texto para mas informacion
+        personalizada y de alta calidad.  
+        <strong>Toca el texto para más información</strong>.
       </p>
+
+      <!-- Masajes -->
       <div class="card-servicio">
         <img
           src="../img/Masajes Terapéuticos y Relajantes.png"
-          alt="Tratamiento corporal"
+          alt="Masajes terapéuticos y relajantes en Zadum"
           class="img-right"
         />
-
         <div class="contenido">
           <h2>Masajes Terapéuticos y Relajantes</h2>
           <ul>
             <li>
               <span class="titulo">Masaje relajante</span>
               <p class="descripcion">
-                Ideal para liberar el estrés y alcanzar una sensación de calma y
-                descanso.
+                Ideal para liberar el estrés y alcanzar una sensación de calma y descanso.
               </p>
             </li>
             <li>
               <span class="titulo">Masaje descontracturante</span>
               <p class="descripcion">
-                Trabaja en profundidad zonas con contracturas o rigidez
-                muscular.
+                Trabaja en profundidad zonas con contracturas o rigidez muscular.
               </p>
             </li>
             <li>
               <span class="titulo">Masaje para piernas cansadas</span>
               <p class="descripcion">
-                Alivia la pesadez, activa la circulación y devuelve ligereza a
-                tus piernas.
+                Alivia la pesadez, activa la circulación y devuelve ligereza a tus piernas.
               </p>
             </li>
             <li>
@@ -104,18 +127,18 @@
             <li>
               <span class="titulo">Masaje con pindas herbales</span>
               <p class="descripcion">
-                Una fusión de masaje y aromaterapia con saquitos calientes de
-                hierbas
+                Masaje combinado con aromaterapia mediante saquitos calientes de hierbas.
               </p>
             </li>
           </ul>
         </div>
       </div>
 
+      <!-- Tratamientos Corporales -->
       <div class="card-servicio reverse">
         <img
           src="../img/Tratamientos Corporales Especiales.jpg"
-          alt="Tratamiento corporal"
+          alt="Tratamientos corporales especiales para cuidado estético"
           class="img-left"
         />
         <div class="contenido contenido-left">
@@ -124,111 +147,92 @@
             <li>
               <span class="titulo">Parafina en espalda relajante</span>
               <p class="descripcion">
-                Ideal para aliviar tensiones musculares y nutrir profundamente
-                la piel
+                Alivia tensiones musculares y nutre profundamente la piel.
               </p>
             </li>
-
             <li>
               <span class="titulo">Parafina en espalda descontracturante</span>
               <p class="descripcion">
-                Ideal para aliviar tensiones musculares y nutrir profundamente
-                la piel
+                Relaja contracturas mientras hidrata y suaviza la piel.
               </p>
             </li>
-
             <li>
               <span class="titulo">Drenaje linfático manual</span>
               <p class="descripcion">
-                Técnica suave que favorece la eliminación de toxinas, reduce la
-                retención de líquidos y mejora la circulación.
+                Técnica suave que elimina toxinas, reduce retención de líquidos y mejora la circulación.
               </p>
             </li>
-
             <li>
               <span class="titulo">Envolturas corporales</span>
               <p class="descripcion">
-                Tratamiento hidratante que nutre profundamente la piel con
-                ingredientes naturales como algas, arcilla, chocolate o aceites
-                esenciales
+                Hidratación profunda con algas, arcilla, chocolate o aceites esenciales.
               </p>
             </li>
-
             <li>
               <span class="titulo">Limpieza profunda en espalda (acné)</span>
               <p class="descripcion">
-                Exfoliación, extracción y purificación de la piel para controlar
-                imperfecciones.
+                Exfoliación y purificación para mejorar la piel y controlar imperfecciones.
               </p>
             </li>
-
             <li>
               <span class="titulo">Limpieza profunda en glúteos (acné)</span>
               <p class="descripcion">
-                Ayuda a eliminar granitos, mejorar la textura y prevenir brotes.
+                Mejora la textura de la piel y ayuda a prevenir brotes.
               </p>
             </li>
           </ul>
         </div>
       </div>
 
+      <!-- Faciales -->
       <div class="card-servicio">
         <img
           src="../img/Tratamientos Faciales Rejuvenecedores.jpg"
-          alt="Tratamiento corporal"
+          alt="Tratamientos faciales rejuvenecedores en Zadum"
           class="img-right"
         />
         <div class="contenido">
           <h2>Tratamientos Faciales Rejuvenecedores</h2>
-
           <ul>
             <li>
               <span class="titulo">Limpieza facial profunda profesional</span>
               <p class="descripcion">
-                Ideal para renovar la piel, eliminar impurezas y mejorar su
-                textura
+                Renueva la piel, elimina impurezas y mejora su textura.
               </p>
             </li>
-
             <li>
               <span class="titulo">Alta frecuencia facial</span>
               <p class="descripcion">
-                Tratamiento antibacteriano que favorece la cicatrización y
-                combate el acné.
+                Tratamiento antibacteriano que combate el acné y favorece la cicatrización.
               </p>
             </li>
-
             <li>
               <span class="titulo">Radiofrecuencia facial</span>
               <p class="descripcion">
-                Estimula el colágeno para reducir arrugas y mejorar la firmeza
-                de la piel.
+                Estimula el colágeno reduciendo arrugas y mejorando la firmeza de la piel.
               </p>
             </li>
-
             <li>
               <span class="titulo">Reafirmación de papada</span>
               <p class="descripcion">
-                Tratamiento localizado que tonifica y define el contorno del
-                rostro.
+                Tonifica y define el contorno del rostro con resultados visibles.
               </p>
             </li>
           </ul>
         </div>
       </div>
 
+      <!-- Beneficios -->
       <div class="card-servicio reverse">
         <img
           src="../img/cosmetologia-medico-y-paciente.jpg"
-          alt="Tratamiento corporal"
+          alt="Cosmetología y atención personalizada médico-paciente"
           class="img-left"
         />
         <div class="contenido contenido-left">
           <h2>Beneficios de Nuestros Tratamientos</h2>
-
           <h4>
-            Cada sesión está pensada para brindarte resultados visibles y
-            bienestar integral
+            Cada sesión está pensada para brindarte resultados visibles y bienestar integral
           </h4>
           <ul>
             <li>Relajación física y mental</li>
@@ -243,27 +247,48 @@
         </div>
       </div>
     </section>
-    <!--Botón de WhatsApp flotante-->
-    <a class="flotante" href="https://wa.me/+50671581462">
-      <img class="boton-wsp" src="../img/WhatsAppLogo.png" border="0" />
+
+    <!-- Botón de WhatsApp -->
+    <a
+      class="flotante"
+      href="https://wa.me/+50671581462"
+      aria-label="Contactar por WhatsApp"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        class="boton-wsp"
+        src="../img/WhatsAppLogo.png"
+        alt="Botón de contacto WhatsApp Zadum"
+      />
     </a>
 
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="../img/LogoZadum.png" alt="Cuidado Facial" />
+          <img src="../img/LogoZadum.png" alt="Logo de Zadum en el footer" />
         </div>
         <div>
           <div class="footer-links">
             <a
-              href="https://www.instagram.com/zadum__oficial?igsh=dnh6Zm9vOGphc3Z3"
+              href="https://www.instagram.com/zadum_estetica?igsh=dnh6Zm9vOGphc3Z3"
               target="_blank"
+              rel="noopener"
+              aria-label="Visitar Instagram Zadum"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="https://www.facebook.com" target="_blank"
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visitar Facebook Zadum"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-            <a href="https://wa.me/+50671581462" target="_blank"
+            <a
+              href="https://wa.me/+50671581462"
+              target="_blank"
+              rel="noopener"
+              aria-label="Chatear en WhatsApp Zadum"
               ><i class="fab fa-whatsapp"></i
             ></a>
           </div>
@@ -271,6 +296,7 @@
         </div>
       </div>
     </footer>
+
     <script src="../js/index.js"></script>
     <script src="../js/viewService.js"></script>
   </body>

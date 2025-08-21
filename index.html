@@ -3,25 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Zadum - Estética y Cuidado Personal</title>
+    <meta
+      name="description"
+      content="Zadum es un centro de estética especializado en belleza, cuidado facial, corporal y bienestar. Ofrecemos masajes, tratamientos rejuvenecedores y servicios personalizados para resaltar tu belleza natural."
+    />
     <meta
       name="keywords"
-      content="zadum, estetica, facial, belleza, cuidado personal"
+      content="estética, zadum, belleza, cuidado facial, tratamientos corporales, masajes relajantes, rejuvenecimiento, piel saludable"
     />
     <meta name="author" content="Majo & Arianna" />
-    <title>Zadum</title>
-    <!-- PRELOAD de CSS  -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/LogoZadum.png" type="image/png" />
+
+    <!-- Open Graph (Facebook / Instagram) -->
+    <meta property="og:title" content="Zadum - Estética y Cuidado Personal" />
+    <meta
+      property="og:description"
+      content="Descubre tratamientos de estética, faciales y corporales en Zadum. Bienestar, belleza y cuidado personalizado para tu piel."
+    />
+    <meta property="og:image" content="./img/LogoZadum.png" />
+    <meta property="og:url" content="https://www.zadum.com" />
+    <meta property="og:type" content="website" />
+
+
+    <!-- PRELOAD de CSS -->
     <link rel="preload" href="./css/normalize.css" as="style" />
     <link rel="preload" href="./css/common.css" as="style" />
     <link rel="preload" href="./css/home.css" as="style" />
+
     <!-- Carga real del CSS -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/home.css" />
+
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <!-- FontAwesome -->
     <link
       rel="stylesheet"
@@ -30,9 +54,9 @@
   </head>
   <body>
     <header>
-      <a href="./index.html">
-        <img src="./img/LogoZadum.png" alt="Logo Zadum Header"
-      /></a>
+      <a href="./index.html" aria-label="Ir al inicio Zadum">
+        <img src="./img/LogoZadum.png" alt="Logo de Zadum Estética" />
+      </a>
       <nav id="main-nav">
         <a href="./index.html">Inicio</a>
         <a href="./views/services.html">Servicios</a>
@@ -57,7 +81,11 @@
     </section>
 
     <section class="about">
-      <img src="./img/Alexa.png" alt="Avatar" />
+      <img
+        src="./img/Alexa.jpg"
+        alt="Retrato de Alexa, esteticista profesional de Zadum"
+      />
+      
       <div class="about-text">
         <h2>Sobre mí</h2>
         <p>
@@ -83,29 +111,29 @@
           <div class="card">
             <img
               src="./img/Masajes Terapéuticos y Relajantes.png"
-              alt="Cuidado Facial"
+              alt="Masajes terapéuticos y relajantes para bienestar físico y mental"
             />
             <div class="info">
               <h3>Masajes Terapéuticos y Relajantes</h3>
             </div>
           </div>
         </a>
-        <a href="./views/services.html"
-          ><div class="card">
+        <a href="./views/services.html">
+          <div class="card">
             <img
               src="./img/Tratamientos Corporales Especiales.jpg"
-              alt="Cuidado Facial"
+              alt="Tratamientos corporales especiales para cuidado estético"
             />
             <div class="info">
               <h3>Tratamientos Corporales Especiales</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
         <a href="./views/services.html">
           <div class="card">
             <img
               src="./img/Tratamientos Faciales Rejuvenecedores.jpg"
-              alt="Cuidado Facial"
+              alt="Tratamientos faciales rejuvenecedores para piel saludable"
             />
             <div class="info">
               <h3>Tratamientos Faciales Rejuvenecedores</h3>
@@ -116,7 +144,7 @@
           <div class="card">
             <img
               src="./img/cosmetologia-medico-y-paciente.jpg"
-              alt="Cuidado Facial"
+              alt="Cosmetología: atención personalizada entre médico y paciente"
             />
             <div class="info">
               <h3>Beneficios de Nuestros Tratamientos</h3>
@@ -125,27 +153,48 @@
         </a>
       </div>
     </section>
-    <!--Botón de WhatsApp flotante-->
-    <a class="flotante" href="https://wa.me/+50671581462">
-      <img class="boton-wsp" src="./img/WhatsAppLogo.png" border="0" />
+
+    <!-- Botón de WhatsApp flotante -->
+    <a
+      class="flotante"
+      href="https://wa.me/+50671581462"
+      aria-label="Contactar por WhatsApp"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        class="boton-wsp"
+        src="./img/WhatsAppLogo.png"
+        alt="Botón de contacto WhatsApp Zadum"
+      />
     </a>
 
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="./img/LogoZadum.png" alt="Cuidado Facial" />
+          <img src="./img/LogoZadum.png" alt="Logo de Zadum en el footer" />
         </div>
         <div>
           <div class="footer-links">
             <a
-              href="https://www.instagram.com/zadum__oficial?igsh=dnh6Zm9vOGphc3Z3"
+              href="https://www.instagram.com/zadum_estetica?igsh=dnh6Zm9vOGphc3Z3"
               target="_blank"
+              rel="noopener"
+              aria-label="Visitar Instagram Zadum"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="https://www.facebook.com" target="_blank"
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visitar Facebook Zadum"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-            <a href="https://wa.me/+50671581462" target="_blank"
+            <a
+              href="https://wa.me/+50671581462"
+              target="_blank"
+              rel="noopener"
+              aria-label="Chatear en WhatsApp Zadum"
               ><i class="fab fa-whatsapp"></i
             ></a>
           </div>
